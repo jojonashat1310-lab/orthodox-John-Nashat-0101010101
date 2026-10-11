@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الخادم جون نشأت | عشرة قديسين أرثوذكس</title>
+  <style>
+    :root {
+      --navy: #172b4d;
+      --gold: #d5ad5b;
+      --cream: #fffaf0;
+      --ink: #263247;
+      --muted: #657187;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--ink);
+      background: #f5f1e8;
+      line-height: 1.8;
+    }
+    header {
+      color: white;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(213,173,91,.24), transparent 25%),
+        linear-gradient(135deg, #12213b, #28466b);
+      padding: 24px 7% 68px;
+      overflow: hidden;
+    }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 18px; flex-wrap: wrap; margin-bottom: 48px;
+    }
+    .brand { font-weight: bold; font-size: 1.15rem; color: #f6d991; }
+    nav a { color: #fff; text-decoration: none; margin-inline-start: 18px; font-size: .95rem; }
+    nav a:hover { color: #f6d991; }
+    .hero { max-width: 780px; }
+    .eyebrow { color: #f6d991; font-weight: bold; letter-spacing: .5px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.25; margin: 12px 0; }
+    .hero p { color: #e6eaf1; font-size: 1.1rem; max-width: 700px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+    .btn {
+      display: inline-block; padding: 11px 20px; border-radius: 10px;
+      text-decoration: none; font-weight: bold; border: 1px solid var(--gold);
+    }
+    .btn-primary { background: var(--gold); color: #172b4d; }
+    .btn-outline { color: white; }
+    main { width: min(1160px, 90%); margin: -30px auto 0; position: relative; }
+    .intro {
+      background: var(--white); border-radius: 18px; padding: 22px 26px;
+      box-shadow: 0 12px 35px #172b4d12; margin-bottom: 30px;
+      border-right: 5px solid var(--gold);
+    }
+    .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 16px; flex-wrap: wrap; margin: 30px 0 18px; }
+    .section-heading h2 { margin: 0; color: var(--navy); font-size: 1.8rem; }
+    .section-heading p { margin: 0; color: var(--muted); }
+    .tools { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; }
+    input, select {
+      font: inherit; border: 1px solid #d7dce4; border-radius: 10px; padding: 11px 13px;
+      background: white; color: var(--ink);
+    }
+    input { flex: 1; min-width: 220px; }
+    select { min-width: 180px; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .card {
+      background: white; border: 1px solid #ebe5d9; border-radius: 17px;
+      overflow: hidden; box-shadow: 0 8px 24px #172b4d0a; transition: transform .2s, box-shadow .2s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px #172b4d16; }
+    .card-top {
+      min-height: 122px; padding: 20px; display: flex; align-items: center; gap: 15px;
+      background: linear-gradient(135deg, #fff6dd, #f2e5c7);
+    }
+    .halo {
+      width: 76px; height: 76px; flex: 0 0 76px; border-radius: 50%;
+      border: 2px solid #d0a54d; display: grid; place-items: center;
+      color: #8b6829; font-size: 2rem; background: #fffdf7;
+      box-shadow: inset 0 0 0 5px #f8edcf;
+    }
+    .card-top h3 { margin: 0 0 3px; color: var(--navy); font-size: 1.15rem; }
+    .card-top .tag { color: #755c2c; font-size: .86rem; }
+    .card-body { padding: 19px 20px 21px; }
+    .card-body p { margin: 0 0 13px; color: #465267; font-size: .96rem; }
+    .meta { border-top: 1px solid #eee8de; padding-top: 12px; color: var(--muted); font-size: .88rem; }
+    .meta strong { color: var(--navy); }
+    .quote { color: #765d2e !important; font-weight: bold; }
+    .empty { display: none; text-align: center; background: white; padding: 25px; border-radius: 14px; }
+    .note { margin: 36px 0; padding: 20px 24px; background: #e9edf3; border-radius: 15px; color: #43516a; }
+    footer { margin-top: 50px; background: #12213b; color: #dfe6f0; text-align: center; padding: 28px 6%; }
+    footer strong { color: #f6d991; }
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 600px) {
+      header { padding: 20px 5% 58px; }
+      nav { margin-bottom: 35px; }
+      nav div:last-child { display: flex; flex-wrap: wrap; gap: 10px; }
+      nav a { margin: 0; }
+      main { width: 92%; }
+      .grid { grid-template-columns: 1fr; }
+      .card-top { min-height: 105px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <nav>
+      <div class="brand">✦ الخادم جون نشأت</div>
+      <div>
+        <a href="#saints">القديسون</a>
+        <a href="#about">عن الموقع</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="eyebrow">سِيَر وإلهام من التراث الأرثوذكسي</div>
+      <h1>الخادم جون نشأت<br>عشرة قديسين أرثوذكسيين</h1>
+      <p>تعرّف على شخصيات تركت أثرًا في تاريخ الكنيسة الأرثوذكسية، من آباء ومعلمين وشهداء ورهبان، من خلال نبذة مختصرة عن حياتهم ورسالتهم.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#saints">اكتشف القديسين</a>
+        <a class="btn btn-outline" href="#about">عن المشروع</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <strong>أهلًا بيك!</strong>
+      <div>الموقع ده مشروع تعريفي مبسّط عن عشرة قديسين معروفين في التراث الأرثوذكسي. استخدم البحث أو التصنيف عشان توصل للشخصية اللي عايز تقرأ عنها.</div>
+    </section>
+
+    <section id="saints">
+      <div class="section-heading">
+        <div>
+          <h2>تعرف على القديسين</h2>
+          <p>نبذة عن حياتهم، وخدمتهم، وأهم ما يميز سيرتهم.</p>
+        </div>
+        <p id="count" aria-live="polite">10 قديسين</p>
+      </div>
+
+      <div class="tools">
+        <input id="search" type="search" placeholder="ابحث باسم القديس أو بكلمة من سيرته..." aria-label="ابحث عن قديس">
+        <select id="filter" aria-label="تصنيف القديسين">
+          <option value="all">كل التصنيفات</option>
+          <option value="father">آباء ومعلمون</option>
+          <option value="martyr">شهداء</option>
+          <option value="monk">رهبان ونسّاك</option>
+          <option value="egypt">قديسون مرتبطون بمصر</option>
+        </select>
+      </div>
+
+      <div class="grid" id="saintGrid">
+        <article class="card" data-category="father egypt" data-search="مار مرقس الإنجيلي رسول كاتب الإنجيل الإسكندرية مصر">
+          <div class="card-top"><div class="halo">✝</div><div><h3>القديس مار مرقس الرسول</h3><div class="tag">رسول وكاروز مصر</div></div></div>
+          <div class="card-body"><p>ينسب إليه التقليد الكنسي تأسيس كنيسة الإسكندرية، ويُعرف بأنه كاتب الإنجيل الثاني في العهد الجديد. ارتبطت خدمته ببدايات انتشار المسيحية في مصر.</p><p class="quote">من أبرز رموزه: الأسد المجنّح في الفن المسيحي.</p><div class="meta"><strong>التذكار في الكنيسة القبطية:</strong> 30 برمودة.</div></div>
+        </article>
+
+        <article class="card" data-category="father egypt" data-search="القديس أثناسيوس الرسولي بابا الإسكندرية حامي الإيمان نيقية">
+          <div class="card-top"><div class="halo">☼</div><div><h3>القديس أثناسيوس الرسولي</h3><div class="tag">بابا الإسكندرية العشرون</div></div></div>
+          <div class="card-body"><p>كان من أبرز المدافعين عن الإيمان المسيحي في القرن الرابع، وشارك في مجمع نيقية سنة 325م. عُرف بثباته في الدفاع عن ألوهية المسيح رغم ما واجهه من نفي واضطهاد.</p><p class="quote">لقبه المشهور: حامي الإيمان الأرثوذكسي.</p><div class="meta"><strong>التذكار القبطي:</strong> 7 بشنس.</div></div>
+        </article>
+
+        <article class="card" data-category="father egypt" data-search="القديس كيرلس الكبير عمود الدين بابا الإسكندرية مجمع أفسس">
+          <div class="card-top"><div class="halo">✦</div><div><h3>القديس كيرلس الكبير</h3><div class="tag">عمود الدين</div></div></div>
+          <div class="card-body"><p>كان بطريرك الإسكندرية في القرن الخامس، وله دور مهم في الجدل اللاهوتي الذي سبق مجمع أفسس سنة 431م. ترك كتابات وشروحات مؤثرة في التراث القبطي والأرثوذكسي.</p><p class="quote">اشتهر بلقب «عمود الدين».</p><div class="meta"><strong>التذكار القبطي:</strong> 3 أبيب.</div></div>
+        </article>
+
+        <article class="card" data-category="monk egypt" data-search="القديس أنطونيوس الكبير أبو الرهبان الصحراء الرهبنة">
+          <div class="card-top"><div class="halo">☼</div><div><h3>القديس أنطونيوس الكبير</h3><div class="tag">أبو الرهبان</div></div></div>
+          <div class="card-body"><p>عاش في مصر في القرنين الثالث والرابع، وكرّس حياته للصلاة والتأمل والزهد. أثّرت سيرته في نشأة الحياة الرهبانية وانتشارها في أنحاء العالم المسيحي.</p><p class="quote">ترتبط سيرته ببدايات الرهبنة في الصحراء المصرية.</p><div class="meta"><strong>التذكار القبطي:</strong> 22 طوبة.</div></div>
+        </article>
+
+        <article class="card" data-category="monk egypt" data-search="القديس باخوميوس أب الشركة الرهبانية الدير الشركة مصر">
+          <div class="card-top"><div class="halo">✝</div><div><h3>القديس باخوميوس</h3><div class="tag">أب الشركة الرهبانية</div></div></div>
+          <div class="card-body"><p>يُعد من الشخصيات المؤسسة للرهبنة الجماعية المنظمة في مصر خلال القرن الرابع. ساعد على وضع قواعد للحياة المشتركة التي تجمع الصلاة والعمل والطاعة.</p><p class="quote">أسهم في تطوير نظام الأديرة الجماعية.</p><div class="meta"><strong>التذكار القبطي:</strong> 14 بشنس.</div></div>
+        </article>
+
+        <article class="card" data-category="monk egypt" data-search="القديس مقاريوس الكبير أبو مقار وادي النطرون ناسك">
+          <div class="card-top"><div class="halo">✦</div><div><h3>القديس مقاريوس الكبير</h3><div class="tag">أحد آباء برية شيهيت</div></div></div>
+          <div class="card-body"><p>عاش ناسكًا في برية شيهيت، المعروفة اليوم بوادي النطرون. ارتبط اسمه بالصلاة والتواضع والإرشاد الروحي، وصار من أبرز آباء الرهبنة المصرية.</p><p class="quote">سيرته مثال للحياة الهادئة المكرسة للصلاة.</p><div class="meta"><strong>التذكار القبطي:</strong> 27 برمودة.</div></div>
+        </article>
+
+        <article class="card" data-category="martyr egypt" data-search="القديسة دميانة شهيدة أربعين عذراء مصر">
+          <div class="card-top"><div class="halo">✧</div><div><h3>القديسة دميانة</h3><div class="tag">شهيدة مصرية</div></div></div>
+          <div class="card-body"><p>تروي سيرتها الكنسية أنها تمسكت بإيمانها وشجعت مجموعة من العذارى على الثبات في وقت الاضطهاد. وتحتل مكانة محبوبة في الوجدان القبطي، خاصة في مصر.</p><p class="quote">ترتبط سيرتها بالشجاعة والثبات على الإيمان.</p><div class="meta"><strong>التذكار القبطي:</strong> 13 طوبة.</div></div>
+        </article>
+
+        <article class="card" data-category="martyr egypt" data-search="القديس مار جرجس الشهيد الروماني فارس الإيمان">
+          <div class="card-top"><div class="halo">⚔</div><div><h3>القديس مار جرجس</h3><div class="tag">الشهيد والفارس</div></div></div>
+          <div class="card-body"><p>قديس وشهيد يحظى بتكريم واسع في الكنائس الأرثوذكسية. تصوره الأيقونات التقليدية أحيانًا ممتطيًا حصانًا، وترمز قصته في الفن الشعبي إلى الشجاعة والانتصار على الشر.</p><p class="quote">من أكثر القديسين انتشارًا في الأيقونات والكنائس.</p><div class="meta"><strong>التذكار القبطي:</strong> 23 برمودة.</div></div>
+        </article>
+
+        <article class="card" data-category="father" data-search="القديس يوحنا ذهبي الفم بطريرك القسطنطينية واعظ عظات">
+          <div class="card-top"><div class="halo">✦</div><div><h3>القديس يوحنا ذهبي الفم</h3><div class="tag">واعظ ومعلّم كنسي</div></div></div>
+          <div class="card-body"><p>كان بطريرك القسطنطينية واشتهر ببلاغته وتفسيره للكتاب المقدس واهتمامه بالفقراء. ما زالت عظاته وصلواته مستخدمة في تقاليد كنسية أرثوذكسية عديدة.</p><p class="quote">لقبه «ذهبي الفم» بسبب فصاحته في الوعظ.</p><div class="meta"><strong>التذكار في تقاليد أرثوذكسية شرقية:</strong> 13 نوفمبر.</div></div>
+        </article>
+
+        <article class="card" data-category="father" data-search="القديس باسيليوس الكبير قيصرية كبادوكية آباء الكنيسة الليتورجيا">
+          <div class="card-top"><div class="halo">☼</div><div><h3>القديس باسيليوس الكبير</h3><div class="tag">أب من آباء الكنيسة</div></div></div>
+          <div class="card-body"><p>كان أسقف قيصرية في القرن الرابع، وأسهم في صياغة التعليم اللاهوتي وتنظيم الحياة الرهبانية والعمل لخدمة المحتاجين. ترتبط باسمه ليتورجيا القديس باسيليوس في الكنيسة القبطية.</p><p class="quote">جمع بين التعليم والإيمان وخدمة الفقراء.</p><div class="meta"><strong>التذكار في تقاليد أرثوذكسية شرقية:</strong> 1 يناير.</div></div>
+        </article>
+      </div>
+      <div class="empty" id="empty">مفيش نتائج مطابقة. جرّب اسم تاني أو غيّر التصنيف.</div>
+    </section>
+
+    <section class="note" id="about">
+      <h2>عن الموقع</h2>
+      <p>الهدف من الصفحة هو تقديم مدخل بسيط لسِيَر عشرة قديسين من التراث الأرثوذكسي، مع اهتمام خاص بقديسين لهم صلة بتاريخ الكنيسة في مصر. التواريخ المذكورة تتبع تقاويم كنسية محددة، وقد تختلف طريقة الاحتفال أو التاريخ بين الكنائس والتقاليد الأرثوذكسية.</p>
+      <p><strong>ملاحظة:</strong> المعلومات هنا مختصرة للتعريف الأولي؛ لو المشروع مطلوب للمدرسة أو الكنيسة، راجع مصدرًا كنسيًا موثوقًا للتأكد من تفاصيل السيرة والتواريخ.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>✦ الخادم جون نشأت</strong>
+    <div>مشروع تعريفي عن التراث الأرثوذكسي — صُمّم باستخدام HTML وCSS وJavaScript.</div>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById('search');
+    const filterSelect = document.getElementById('filter');
+    const cards = [...document.querySelectorAll('.card')];
+    const count = document.getElementById('count');
+    const empty = document.getElementById('empty');
+
+    function filterSaints() {
+      const query = searchInput.value.trim().toLowerCase();
+      const category = filterSelect.value;
+      let visible = 0;
+
+      cards.forEach(card => {
+        const searchableText = (card.dataset.search + ' ' + card.innerText).toLowerCase();
+        const matchesText = searchableText.includes(query);
+        const categories = card.dataset.category.split(' ');
+        const matchesCategory = category === 'all' || categories.includes(category);
+        const show = matchesText && matchesCategory;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      count.textContent = visible + (visible === 1 ? ' قديس' : ' قديسين');
+      empty.style.display = visible ? 'none' : 'block';
+    }
+
+    searchInput.addEventListener('input', filterSaints);
+    filterSelect.addEventListener('change', filterSaints);
+  </script>
+</body>
+</html>
